@@ -161,11 +161,21 @@
                 <a href="#" class="register-btn">Connect</a>
                 
                 <br><br><Br>
-                <a href="/planDetails.html">
+                <a href="planDetails.html">
                     <button type="submit" class="register-btn">Register</button>
                 </a>
             </form>
         </div>
     </main>
+    <script>
+        let buttons = document.getElementsByTagName('button');
+
+        Array(buttons).forEach((element) => {
+            element.addEventListener.apply('click', (e) => {
+                e.preventDefault();
+            })
+        })
+        
+    </script>
 </body>
 </html>
