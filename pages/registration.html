@@ -117,7 +117,7 @@
     <main>
         <div class="container">
             <h2>Data Owner Registration</h2>
-            <form>
+            <form action="/api/users" method="POST" id="add_user">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name"  required>
@@ -156,13 +156,12 @@
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </div>
                 <a href="#" class="register-btn">Connect</a>
                 
                 <br><br><Br>
-                <a href="planDetails.html" class="register-btn">Register</a>
-
+                <a href="planDetails"><button type="submit" class="register-btn">Register</button></a>
             </form>
         </div>
     </main>
